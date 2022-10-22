@@ -3,7 +3,13 @@ import java.util.*;
 
 public class Main {
 
-    static final List<String> station = new ArrayList<>();
+    private static final Map<Integer, String> station = new HashMap<Integer, String>(){{
+        put(0, "A");
+        put(1, "B");
+        put(2, "C");
+        put(3, "D");
+        put(4, "E");
+    }};
 
     static final List<Lastbilar> kajer = new ArrayList<>();
 
@@ -12,12 +18,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //lägger kajplatser i List station
-        station.add("A");
-        station.add("B");
-        station.add("C");
-        station.add("D");
-        station.add("E");
+
 
         for (int i = 0; i < 5; i++) {
             kajer.add(null);                    //skapar toma lastkajer i List kajer
