@@ -90,7 +90,7 @@ public class Main {
 
         if (lastbilar.getType() == 1) {          // om biltyp - Skåpbil
             if (kajer.get(0) == null) {          // och om cell index 0 i List kajer är "tom" - null
-                cellIndexKaj = 0;                // cellIndexKaj får värde motsvarande värde "A" i list "station"
+                cellIndexKaj = 0;                // cellIndexKaj får värde motsvarande värde "A" i Map "station"
             } else if (kajer.get(1) == null) {
                 cellIndexKaj = 1;
             }
