@@ -1,13 +1,8 @@
 public abstract class Lastbilar {
-    protected double weight;
-    protected int type;
+    protected double vikten;
 
-    Lastbilar(int type){
-
-        this.type = type;
-    }
-
-    public abstract double getWeight();
+    
+    public abstract double getVikten();
 
     public abstract int getType();
 }
