@@ -1,19 +1,19 @@
 public class Litenlastbil  extends Lastbilar {
     public Litenlastbil(double weight) {
-        super(2);
-        this.weight = weight;
+
+        this.vikten = weight;
     }
 
     @Override
     public int getType() {
-        return type;
+        return 2;
     }
     @Override
     public String toString() {
-        return "Lätt lastbil, vikt = " + weight;
+        return "Lätt lastbil, vikt = " + vikten;
     }
     @Override
-    public double getWeight() {
-        return this.weight;
+    public double getVikten() {
+        return this.vikten;
     }
 }
