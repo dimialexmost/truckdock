@@ -1,8 +1,11 @@
 public abstract class Lastbilar {
     protected double vikten;
+    protected int type;
 
-    
-    public abstract double getVikten();
-
-    public abstract int getType();
+    public double getVikten() {
+    return vikten;
+    }
+    public int getType() {
+    return type;
+    }
 }
