@@ -86,11 +86,11 @@ public class Main {
             lastbilar = new TungLastbil(vikten);
         }
 
-        int cellIndexKaj = -1;                    // sätter in utgångs värde före val av lastbilstyp
+        int cellIndexKaj = 5;                    // sätter in utgångs värde före val av lastbilstyp
 
         if (lastbilar.getType() == 1) {          // om biltyp - Skåpbil
             if (kajer.get(0) == null) {          // och om cell index 0 i List kajer är "tom" - null
-                cellIndexKaj = 0;                // cellIndexKaj får värde motsvarande index "A" i Map "station"
+                cellIndexKaj = 0;                // cellIndexKaj får värde motsvarande värde "A" i list "station"
             } else if (kajer.get(1) == null) {
                 cellIndexKaj = 1;
             }
@@ -99,18 +99,18 @@ public class Main {
                 cellIndexKaj = 2;
             } else if (kajer.get(3) == null) {
                 cellIndexKaj = 3;
-            } else if (lastbilar.getWeight()<5000 && kajer.get(0) == null) {
+            } else if (lastbilar.getVikten()<5000 && kajer.get(0) == null) {
                 cellIndexKaj = 0;
             }
         } else if (lastbilar.getType() == 3) {
             if (kajer.get(4) == null) {
                 cellIndexKaj = 4;
-            } else if (lastbilar.getWeight()<9000 && kajer.get(3) == null) {
+            } else if (lastbilar.getVikten()<9000 && kajer.get(3) == null) {
                 cellIndexKaj = 3;
             }
         }
 
-        if (cellIndexKaj == -1) {
+        if (cellIndexKaj == 5) {
             System.out.println("Tyvärr är det fullt, du hänvisas till stationen \"Dumpa mest!\"");
         } else {
             System.out.println("Lastbil registrerad för kaj " + station.get(cellIndexKaj)); //...+ "namnet" som ligger under motsvarande index i list "kajer"
