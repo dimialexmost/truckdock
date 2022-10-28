@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Main {
 
-    private static final Map<Integer, String> station = new HashMap<Integer, String>(){{
+    private static final Map<Integer, String> station = new HashMap<Integer, String>(){{ //onödigt, använt bara för att vi hade den i kurs. räker med ArrayList
         put(0, "A");
         put(1, "B");
         put(2, "C");
