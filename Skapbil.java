@@ -1,17 +1,8 @@
 public class Skapbil extends Lastbilar {
-    public Skapbil(double weight) {
+    public Skapbil(double vikten) {
 
-        this.vikten = weight;
-    }
-
-    @Override
-    public double getVikten() {
-        return this.vikten;
-    }
-
-    @Override
-    public int getType() {
-        return 1;
+        this.vikten = vikten;
+        this.type = 1;
     }
 
     @Override
